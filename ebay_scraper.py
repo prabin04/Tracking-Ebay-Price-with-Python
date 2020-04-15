@@ -20,7 +20,7 @@ def check_price():
     print(converted_price)
     print(title.strip())
 
-    if(converted_price > 1.700):
+    if(converted_price < 1.700):
         send_mail()
 
 def send_mail():
