@@ -29,18 +29,14 @@ def send_mail():
     server.startls()
     server.ehlo
     
-    server.login('prabin.b9@gmail.com','ompqbcvtogunyhgb')
+    server.login('prabin.b9@gmail.com','googleAppCodeGoesHere')
 
     subject = 'Hey, Price of the product fell down'
     body = 'Check an eBay Link https://www.ebay.com/itm/Aluminium-HD-Polarized-Photochromic-Sunglasses-Men-Chameleon-Driving-Sun-Glasses/254204493465'
 
     msg = f'Subject: {subject}\n\n{body}'
 
-    server.sendmail(
-        'prabin.b9@gmail.com',
-        'prabinparajuli10@gmail.com',
-        msg
-    )
+    server.sendmail('prabin.b9@gmail.com','prabinparajuli10@gmail.com',msg)
     print('Email Has been Sent!')
 
     server.quit()
